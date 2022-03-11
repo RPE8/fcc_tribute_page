@@ -1,0 +1,114 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    /* overflow: hidden; */
+}
+
+body {
+    background: url("../images/e01.gif") no-repeat center center fixed;
+    background-size: cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    animation: puri-lightning 4s linear infinite;
+}
+
+@keyframes puri-lightning {
+    0% {
+        opacity: 0;
+    }
+    47% {
+        opacity: 0;
+    }
+    48% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes puri-title {
+    0% {
+        color: pink;
+        font-size: 2em;
+    }
+
+    25% {
+        color:aqua;
+        font-size: 1.9em;
+    }
+
+    50% {
+        color: yellow;
+        font-size: 1.7em;
+    }
+
+    85% {
+        color: yellow;
+        font-size: 1.9em;
+    }
+
+    100% {
+        color: pink;
+        font-size: 2em;
+    }
+}
+
+@keyframes puri-text {
+    0% {
+        text-shadow: 1px 1px 1px pink;
+    }
+
+    33% {
+        text-shadow: 1px 1px 1px aqua;
+    }
+
+    66% {
+        text-shadow: 1px 1px 1px yellow;
+    }
+
+    100% {
+        text-shadow: 1px 1px 1px pink;
+    }
+}
+
+#title {
+    text-align: center;
+    height: 2em;
+}
+
+#tribute-link {
+    text-shadow: 1px 1px 1px red;
+    text-decoration: none;
+}
+
+#tribute-link:link {
+    animation: puri-title 2s linear infinite;
+}
+
+#tribute-info {
+    margin: 0 auto;
+    font-size: 1em;
+    max-width: 700px;
+    animation: puri-text 2s linear infinite;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+}
+
+#img-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
